@@ -1,0 +1,21 @@
+<head>
+    <title>Jacob Klein</title>
+    <script>
+        let pathname = window.location.pathname;
+        const split = pathname.split('/');
+        const app = split[1];
+        const redirect = window.location.origin + '/' + app;
+        const path = split.length > 2 ? split.slice(2).join('/') : null;
+        localStorage.setItem('path', path);
+        console.log('path', path);
+        console.log('pathname', pathname);
+        console.log('redirect', redirect);
+        window.location.href = redirect;
+    </script>
+</head>
+<body>
+<div style="text-align: center">
+    Redirecting...
+</div>
+
+</body>
