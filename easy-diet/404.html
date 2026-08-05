@@ -1,0 +1,16 @@
+<head>
+  <title>Easy Diet</title>
+  <script>
+    const path = window.location.pathname
+      .replace('http://', '')
+      .replace('https://', '')
+      .replace('jacobklein.github.io', '')
+      .replace('/easy-diet', '');
+    console.log('Setting path:', path);
+    localStorage.setItem('path', path);
+    window.location.href = 'https://jacobklein.github.io/easy-diet';
+  </script>
+</head>
+<body>
+Redirecting...
+</body>
